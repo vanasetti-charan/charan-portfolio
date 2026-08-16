@@ -131,12 +131,13 @@ https://github.com/vanasetti-charan/Python-Projects
 
 ## 📂 Project Structure
 
+```text
 charan-portfolio/
 │
 ├── index.html
 │
 └── README.md
----
+```
 
 ## 🎯 Purpose
 
@@ -181,3 +182,4 @@ https://vanasetti-charan.github.io/charan-portfolio/
 ⭐ Thank you for visiting my portfolio repository!
 
 Feel free to explore my projects and connect with me.
+
