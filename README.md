@@ -137,6 +137,3 @@ charan-portfolio/
 ├── index.html
 │
 └── README.md
-│   └── numPy.png
-│
-└── README.md
