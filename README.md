@@ -131,14 +131,14 @@ https://github.com/vanasetti-charan/Python-Projects
 
 ## 📂 Project Structure
 
-```text
 charan-portfolio/
 │
 ├── index.html
 │
 └── README.md
+---
 
-🎯 Purpose
+## 🎯 Purpose
 
 This portfolio represents my ongoing professional journey across software development, web technologies, and digital accessibility.
 
@@ -146,7 +146,8 @@ I continuously strengthen my technical skills through hands-on projects, profess
 
 My goal is to contribute to meaningful technology solutions while continuing to grow professionally and technically.
 
-📈 Current Professional Focus
+## 📈 Current Professional Focus
+
 PDF Accessibility Specialist
 
 ZorvinTech Private Limited
