@@ -2,577 +2,2585 @@
 <html lang="en">
 
 <head>
+
+    <!-- ================================
+         META
+    ================================= -->
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vanasetti Charan | Python Backend Developer Portfolio</title>
+
+    <meta name="description"
+        content="Vanasetti Charan - Software & Web Technologies professional with experience in Digital Accessibility, PDF Accessibility, Python, SQL, HTML, CSS and JavaScript.">
+
+    <meta name="author" content="Vanasetti Charan">
+
+    <meta name="keywords"
+        content="Vanasetti Charan, Python Developer, Web Developer, Software Developer, Digital Accessibility, PDF Accessibility, WCAG, PDF/UA, HTML, CSS, JavaScript, SQL">
+
+    <title>Vanasetti Charan | Software & Web Technologies</title>
+
+
+    <!-- ================================
+         GOOGLE FONTS
+    ================================= -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- ================================
+         BOOTSTRAP ICONS
+    ================================= -->
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+
+    <!-- ================================
+         BOOTSTRAP
+    ================================= -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- ================================
+         CUSTOM CSS
+    ================================= -->
+
     <style>
+        /* =================================
+           GLOBAL
+        ================================= */
+
         html {
             scroll-behavior: smooth;
         }
 
         body {
             background: #0d1117;
-            color: white;
+            color: #ffffff;
             font-family: 'Poppins', sans-serif;
-            padding-top: 80px;
-        }
-
-        nav {
-            background: #0d1117;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
-        }
-
-        .nav-link {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            transition: 0.3s;
-        }
-
-        .navbar-brand {
-            color: #38bdf8;
-            font-weight: 600;
-            font-size: 1.2rem;
-        }
-
-        .navbar-brand:hover {
-            color: #0d6efd;
-            transition: 0.3s;
-        }
-
-        .nav-link:hover {
-            color: #0d6efd;
-            transition: 0.3s;
-        }
-
-        #hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-
-        #hero h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-        }
-
-        #hero h1 span {
-            color: #38bdf8;
-        }
-
-        #hero h3 {
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-
-        #hero p {
-            font-size: 18px;
-            margin-bottom: 30px;
-        }
-
-        .btn {
-            background: linear-gradient(45deg, #38bdf8, #6366f1);
-            color: white;
-            border: none;
-            padding: 10px 25px;
-            border-radius: 25px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-
-        .btn:hover {
-            transform: scale(1.05);
-        }
-
-        #hero {
-            padding-top: 0;
+            padding-top: 76px;
+            line-height: 1.6;
         }
 
         section {
             padding: 100px 0;
             scroll-margin-top: 80px;
-            color: white;
         }
 
         section h2 {
             font-size: 2rem;
-            margin-bottom: 40px;
+            font-weight: 600;
+            margin-bottom: 50px;
         }
 
-        #about p {
-            text-align: justify;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 20px auto;
+        a {
+            text-decoration: none;
+        }
+
+
+        /* =================================
+           NAVBAR
+        ================================= */
+
+        nav {
+            background: rgba(13, 17, 23, 0.96);
+            border-bottom: 1px solid #21262d;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+        }
+
+        .navbar-brand {
+            color: #38bdf8 !important;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+
+        .nav-link {
+            color: #ffffff !important;
             font-weight: 500;
+            transition: 0.3s ease;
+            position: relative;
         }
 
-        .card-s {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 25px;
+        .nav-link:hover,
+        .nav-link:focus,
+        .nav-link.active {
+            color: #38bdf8 !important;
         }
 
-        .crd {
-            background: #21262d;
-            color: white;
-            text-align: center;
-            font-weight: 700;
-            padding: 20px;
+        .nav-link.active::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2px;
+            background: #38bdf8;
+            border-radius: 5px;
+        }
+
+        .navbar-toggler {
+            border-color: #38bdf8;
+        }
+
+
+        /* =================================
+           HERO
+        ================================= */
+
+        #hero {
+            min-height: calc(100vh - 76px);
+            position: relative;
+
             display: flex;
-            flex-direction: column;
-            border-radius: 15px;
-            justify-content: space-between;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-            cursor: pointer;
-            transition: 0.3s;
-        }
+            align-items: center;
+            justify-content: center;
 
-        .crd:hover,
-        .cert:hover {
-            background-color: #334155;
-            transform: scale(1.03);
-            box-shadow: 0 0 15px #38bdf8;
-        }
-
-        .card {
-            background: #21262d;
-            color: white;
-            font-weight: 500;
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-            transition: 0.3s;
-        }
-
-        .card:hover {
-            background-color: #334155;
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-        }
-
-        #projects p {
-            text-align: left;
-            line-height: 1.5;
-            margin: 20px 0;
-
-        }
-
-        h3 {
-            color: #38bdf8;
             text-align: center;
+
+            overflow: hidden;
+
+            background:
+                radial-gradient(circle at 15% 20%,
+                    rgba(56, 189, 248, 0.09),
+                    transparent 30%),
+
+                radial-gradient(circle at 85% 70%,
+                    rgba(99, 102, 241, 0.09),
+                    transparent 30%),
+
+                #0d1117;
         }
 
-        .cert-s {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
 
+        #hero::before {
+            content: "";
+
+            position: absolute;
+            inset: 0;
+
+            background-image:
+                linear-gradient(rgba(255, 255, 255, 0.025) 1px,
+                    transparent 1px),
+
+                linear-gradient(90deg,
+                    rgba(255, 255, 255, 0.025) 1px,
+                    transparent 1px);
+
+            background-size: 45px 45px;
+
+            mask-image:
+                linear-gradient(to bottom,
+                    black,
+                    transparent 90%);
+
+            pointer-events: none;
         }
 
-        .cert {
-            background: #21262d;
-            color: white;
-            font-weight: 500;
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-            transition: 0.3s;
-            height: 100%;
+
+        .hero-orb {
+            position: absolute;
+
+            width: 320px;
+            height: 320px;
+
+            border-radius: 50%;
+
+            background: rgba(56, 189, 248, 0.08);
+
+            filter: blur(80px);
+
+            top: 10%;
+            right: 10%;
+
+            pointer-events: none;
+
+            transition: transform 0.3s ease;
         }
 
-        .cert h4 {
-            text-align: center;
-            margin-bottom: 15px;
-            color: #38bdf8;
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+
+            max-width: 1000px;
         }
 
-        footer {
-            background: #0d1117;
-            border-top: 1px solid #21262d;
-            padding: 30px 0;
-            text-align: center;
-        }
 
-        footer .social-icons a {
+        .hero-status {
+            display: inline-flex;
+
+            align-items: center;
+            gap: 9px;
+
+            padding: 8px 17px;
+
+            margin-bottom: 28px;
+
+            border: 1px solid #30363d;
+
+            border-radius: 30px;
+
+            background: rgba(22, 27, 34, 0.8);
+
             color: #c9d1d9;
-            margin: 0 12px;
-            font-size: 1.5rem;
-            transition: 0.3s;
+
+            font-size: 0.85rem;
+
+            backdrop-filter: blur(10px);
         }
 
-        footer .social-icons a:hover {
+        .status-dot {
+            width: 8px;
+            height: 8px;
+
+            background: #22c55e;
+
+            border-radius: 50%;
+
+            box-shadow:
+                0 0 10px rgba(34, 197, 94, 0.7);
+
+            animation: pulseDot 2s infinite;
+        }
+
+        @keyframes pulseDot {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.4;
+            }
+        }
+
+
+        .hero-name {
+            font-family: 'Space Grotesk', sans-serif;
+
+            font-size: clamp(3.5rem,
+                    9vw,
+                    7rem);
+
+            font-weight: 700;
+
+            letter-spacing: -4px;
+
+            line-height: 1;
+
+            margin-bottom: 30px;
+
+            color: #ffffff;
+        }
+
+        .hero-name span {
             color: #38bdf8;
+
+            position: relative;
+        }
+
+        .hero-name span::after {
+            content: "";
+
+            position: absolute;
+
+            left: 0;
+            bottom: -8px;
+
+            width: 100%;
+            height: 3px;
+
+            background:
+                linear-gradient(90deg,
+                    #38bdf8,
+                    #6366f1);
+
+            border-radius: 5px;
+        }
+
+
+        .hero-title {
+            font-size: clamp(1.3rem,
+                    3vw,
+                    2rem);
+
+            font-weight: 500;
+
+            color: #c9d1d9;
+
+            margin-bottom: 15px;
+        }
+
+        .hero-typing {
+            color: #38bdf8;
+            font-weight: 600;
+        }
+
+        .cursor {
+            color: #38bdf8;
+
+            animation:
+                blinkCursor 0.8s infinite;
+        }
+
+        @keyframes blinkCursor {
+
+            50% {
+                opacity: 0;
+            }
+        }
+
+
+        .hero-description {
+            max-width: 780px;
+
+            margin: 25px auto;
+
+            color: #8b949e;
+
+            font-size: 1.05rem;
+        }
+
+        .hero-description strong {
+            color: #c9d1d9;
+            font-weight: 500;
+        }
+
+
+        .hero-tags {
+            display: flex;
+
+            justify-content: center;
+
+            flex-wrap: wrap;
+
+            gap: 10px;
+
+            margin: 30px auto;
+        }
+
+        .hero-tag {
+            background: rgba(22, 27, 34, 0.8);
+
+            border: 1px solid #30363d;
+
+            color: #c9d1d9;
+
+            padding: 7px 14px;
+
+            border-radius: 20px;
+
+            font-size: 0.85rem;
+
+            transition: 0.3s ease;
+        }
+
+        .hero-tag:hover {
+            border-color: #38bdf8;
+
+            color: #38bdf8;
+
             transform: translateY(-3px);
         }
 
-        footer p {
-            margin-top: 15px;
-            font-size: 0.95rem;
-            color: #8b949e;
+
+        .hero-buttons {
+            display: flex;
+
+            justify-content: center;
+
+            flex-wrap: wrap;
+
+            gap: 14px;
+
+            margin-top: 30px;
         }
 
-        footer .name {
-            font-weight: 600;
+
+        .btn {
+            background:
+                linear-gradient(45deg,
+                    #38bdf8,
+                    #6366f1);
+
+            border: none;
+
+            color: #ffffff;
+
+            padding: 11px 25px;
+
+            border-radius: 25px;
+
+            transition: 0.3s ease;
+        }
+
+        .btn:hover,
+        .btn:focus {
+            color: #ffffff;
+
+            transform: translateY(-3px);
+
+            box-shadow:
+                0 8px 22px rgba(56, 189, 248, 0.25);
+        }
+
+        .btn-outline-custom {
+            background: transparent;
+
+            border: 1px solid #38bdf8;
+
             color: #38bdf8;
         }
 
-        #FAQs {
-            max-width: 800px;
+        .btn-outline-custom:hover,
+        .btn-outline-custom:focus {
+            background: #38bdf8;
+
+            color: #0d1117;
+        }
+
+
+        .hero-stats {
+            display: flex;
+
+            justify-content: center;
+
+            flex-wrap: wrap;
+
+            gap: 50px;
+
+            margin-top: 55px;
+        }
+
+        .hero-stat {
+            text-align: center;
+        }
+
+        .hero-stat strong {
+            display: block;
+
+            color: #ffffff;
+
+            font-size: 1.35rem;
+        }
+
+        .hero-stat span {
+            color: #8b949e;
+
+            font-size: 0.8rem;
+        }
+
+
+        .hero-scroll {
+            position: absolute;
+
+            bottom: 22px;
+            left: 50%;
+
+            transform:
+                translateX(-50%);
+
+            color: #8b949e;
+
+            font-size: 0.8rem;
+
+            z-index: 2;
+        }
+
+        .hero-scroll i {
+            display: block;
+
+            color: #38bdf8;
+
+            margin-top: 5px;
+
+            animation:
+                scrollDown 1.5s infinite;
+        }
+
+        @keyframes scrollDown {
+
+            0%,
+            100% {
+                transform:
+                    translateY(0);
+            }
+
+            50% {
+                transform:
+                    translateY(7px);
+            }
+        }
+
+
+        /* =================================
+           ABOUT
+        ================================= */
+
+        #about p {
+            max-width: 850px;
+
+            margin: 20px auto;
+
+            color: #c9d1d9;
+
+            text-align: justify;
+        }
+
+
+        /* =================================
+           EXPERIENCE
+        ================================= */
+
+        .experience-card {
+            background: #161b22;
+
+            border: 1px solid #30363d;
+
+            border-left:
+                4px solid #38bdf8;
+
+            border-radius: 15px;
+
+            padding: 35px;
+
+            transition: 0.3s ease;
+        }
+
+        .experience-card:hover {
+            transform:
+                translateY(-5px);
+
+            box-shadow:
+                0 10px 25px rgba(0, 0, 0, 0.35);
+        }
+
+        .experience-card h3 {
+            color: #38bdf8;
+
+            font-size: 1.5rem;
+
+            margin-bottom: 5px;
+        }
+
+        .company {
+            color: #ffffff;
+
+            font-weight: 500;
+
+            font-size: 1.05rem;
+        }
+
+        .duration {
+            color: #8b949e;
+
+            font-size: 0.9rem;
+
+            margin-bottom: 25px;
+        }
+
+        .experience-card ul {
+            color: #c9d1d9;
+
+            padding-left: 20px;
+        }
+
+        .experience-card li {
+            margin-bottom: 12px;
+        }
+
+
+        /* =================================
+           SKILLS
+        ================================= */
+
+        .skill-group {
+            margin-bottom: 45px;
+        }
+
+        .skill-group-title {
+            color: #38bdf8;
+
+            margin-bottom: 20px;
+
+            font-size: 1.2rem;
+
+            font-weight: 600;
+        }
+
+        .skills-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(auto-fit,
+                    minmax(180px, 1fr));
+
+            gap: 18px;
+        }
+
+        .skill-card {
+            background: #21262d;
+
+            border: 1px solid #30363d;
+
+            border-radius: 12px;
+
+            padding: 18px;
+
+            text-align: center;
+
+            color: #ffffff;
+
+            font-weight: 500;
+
+            transition: 0.3s ease;
+        }
+
+        .skill-card:hover {
+            transform:
+                translateY(-4px);
+
+            border-color: #38bdf8;
+
+            box-shadow:
+                0 5px 15px rgba(56, 189, 248, 0.15);
+        }
+
+        .skill-card i {
+            color: #38bdf8;
+
+            margin-right: 7px;
+        }
+
+
+        /* =================================
+           AREAS OF EXPERTISE
+        ================================= */
+
+        .expertise-card {
+            background: #161b22;
+
+            border: 1px solid #30363d;
+
+            border-radius: 15px;
+
+            padding: 30px;
+
+            height: 100%;
+
+            transition: 0.3s ease;
+        }
+
+        .expertise-card:hover {
+            transform:
+                translateY(-6px);
+
+            border-color: #38bdf8;
+
+            box-shadow:
+                0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .expertise-icon {
+            width: 52px;
+            height: 52px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: rgba(56, 189, 248, 0.08);
+
+            border: 1px solid #30363d;
+
+            border-radius: 12px;
+
+            margin-bottom: 18px;
+
+            color: #38bdf8;
+
+            font-size: 1.5rem;
+        }
+
+        .expertise-card h3 {
+            color: #ffffff;
+
+            font-size: 1.15rem;
+
+            margin-bottom: 10px;
+        }
+
+        .expertise-card p {
+            color: #8b949e;
+
+            font-size: 0.9rem;
+
+            margin: 0;
+        }
+
+
+        /* =================================
+           PROJECTS
+        ================================= */
+
+        .project-card {
+            background: #21262d;
+
+            border: 1px solid #30363d;
+
+            border-radius: 15px;
+
+            padding: 30px;
+
+            height: 100%;
+
+            display: flex;
+
+            flex-direction: column;
+
+            transition: 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform:
+                translateY(-7px);
+
+            border-color: #38bdf8;
+
+            box-shadow:
+                0 10px 25px rgba(0, 0, 0, 0.35);
+        }
+
+        .project-card h3 {
+            color: #38bdf8;
+
+            text-align: center;
+
+            font-size: 1.25rem;
+
+            margin-bottom: 20px;
+        }
+
+        .tech-stack {
+            color: #38bdf8;
+
+            font-size: 0.9rem;
+
+            font-weight: 500;
+        }
+
+        .project-card p {
+            color: #c9d1d9;
+
+            font-size: 0.92rem;
+        }
+
+        .project-card .btn {
+            margin-top: auto;
+
+            align-self: flex-start;
+        }
+
+
+        /* =================================
+           QUICK OVERVIEW
+        ================================= */
+
+        #quick-overview {
+            max-width: 100%;
+        }
+
+        .overview-container {
+            max-width: 900px;
             margin: auto;
         }
 
-        details {
-            background-color: #21262d;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(56, 189, 248, 0.2);
-            padding: 15px 20px;
-            margin-bottom: 20px;
-            cursor: pointer;
-            font-size: 1.2rem;
-            transition: 0.3s;
+        .overview-item {
+            background: #161b22;
+
             border: 1px solid #30363d;
+
+            border-radius: 12px;
+
+            padding: 20px 25px;
+
+            margin-bottom: 18px;
+
+            transition: 0.3s ease;
         }
-        details:hover{
-            transform: translateY(-4px);
+
+        .overview-item:hover {
+            border-color: #38bdf8;
+
+            transform:
+                translateY(-3px);
+
+            box-shadow:
+                0 8px 20px rgba(0, 0, 0, 0.25);
         }
-        summary {
-            font-weight: 500;
-            font-size: 1.1rem;
+
+        .overview-item summary {
             color: #38bdf8;
+
+            font-size: 1.05rem;
+
+            font-weight: 500;
+
+            cursor: pointer;
+
             list-style: none;
 
+            position: relative;
+
+            padding-right: 30px;
         }
 
-        summary::after {
+        .overview-item summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .overview-item summary::after {
             content: "+";
-            float: right;
+
+            position: absolute;
+
+            right: 0;
+
+            top: -3px;
+
             font-size: 1.4rem;
-            transition: 0.3s;
+
+            color: #38bdf8;
         }
 
-        details[open] summary::after {
-            content: "-";
-            font-size: 1.4rem;
+        .overview-item[open] summary::after {
+            content: "−";
         }
-        details p{
-            margin-top: 10px;
-            font-size: 1rem;
-            color:#c9d1d9;
-            line-height: 1.6;
+
+        .overview-answer {
+            color: #c9d1d9;
+
+            font-size: 0.95rem;
+
+            margin: 15px 0 0;
+
+            padding-top: 15px;
+
+            border-top: 1px solid #30363d;
+        }
+
+
+        /* =================================
+           CONTACT
+        ================================= */
+
+        #contact {
+            text-align: center;
+        }
+
+        .contact-text {
+            max-width: 700px;
+
+            margin:
+                0 auto 35px;
+
+            color: #8b949e;
+        }
+
+        .contact-form {
+            width: 100%;
+
+            max-width: 850px;
+
+            margin: auto;
+        }
+
+        .contact-form .form-control {
+            width: 100% !important;
+
+            background: #161b22;
+
+            color: #ffffff;
+
+            border: 1px solid #30363d;
+
+            border-radius: 10px;
+
+            padding: 15px 18px;
+
+            min-height: 54px;
+        }
+
+        .contact-form textarea.form-control {
+            min-height: 180px;
+
+            resize: vertical;
+        }
+
+        #contact input::placeholder,
+        #contact textarea::placeholder {
+            color: #8b949e;
+        }
+
+        #contact input:focus,
+        #contact textarea:focus {
+            background: #161b22;
+
+            color: #ffffff;
+
+            border-color: #38bdf8;
+
+            box-shadow:
+                0 0 0 2px rgba(56, 189, 248, 0.08);
+        }
+
+
+        /* =================================
+           FOOTER
+        ================================= */
+
+        footer {
+            background: #0d1117;
+
+            border-top:
+                1px solid #21262d;
+
+            padding: 35px 0;
+
+            text-align: center;
+        }
+
+        .social-icons a {
+            color: #c9d1d9;
+
+            margin: 0 12px;
+
+            font-size: 1.5rem;
+
+            transition: 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #38bdf8;
+
+            transform:
+                translateY(-3px);
+        }
+
+        footer p {
+            color: #8b949e;
+
+            font-size: 0.9rem;
+        }
+
+        .name {
+            color: #38bdf8;
+
+            font-weight: 600;
+        }
+
+
+        /* =================================
+           RESPONSIVE
+        ================================= */
+
+        @media (max-width: 768px) {
+
+            section {
+                padding: 75px 0;
+            }
+
+            #hero {
+                padding:
+                    50px 15px;
+            }
+
+            .hero-name {
+                font-size: 3.5rem;
+
+                letter-spacing:
+                    -2px;
+            }
+
+            .hero-description {
+                font-size: 0.95rem;
+            }
+
+            .hero-stats {
+                gap: 25px;
+
+                margin-top: 40px;
+            }
+
+            .hero-scroll {
+                display: none;
+            }
+
+            #about p {
+                text-align: left;
+            }
+
+            .experience-card {
+                padding: 25px;
+            }
+
+            .contact-form {
+                max-width: 100%;
+            }
+
+        }
+
+
+        @media (max-width: 576px) {
+
+            .hero-name {
+                font-size: 3rem;
+            }
+
+            .hero-title {
+                font-size: 1.15rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+
+                align-items: center;
+            }
+
+            .hero-buttons .btn {
+                width: 220px;
+            }
+
+            .hero-stats {
+                gap: 20px;
+            }
+
         }
     </style>
-    <script>
-        function contact() {
-            alert("Thank you for reaching out! I will get back to you soon.");
-        }
-    </script>
+
 </head>
 
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top p-3">
+
+
+    <!-- =================================
+         NAVIGATION
+    ================================= -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+
         <div class="container">
-            <h1 class="navbar-brand">Vanasetti Charan</h1>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+            <a class="navbar-brand" href="#hero">
+                Vanasetti Charan
+            </a>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
                 <span class="navbar-toggler-icon"></span>
+
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <div class="navbar-nav ms-auto gap-3">
+
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ms-auto gap-lg-3">
+
                     <li class="nav-item">
-                        <a class="nav-link" href="#hero">
-                            <i class="bi bi-house-door-fill"></i> Home
+
+                        <a class="nav-link active" href="#hero">
+
+                            Home
+
                         </a>
+
                     </li>
+
+
                     <li class="nav-item">
+
                         <a class="nav-link" href="#about">
-                            <i class="bi bi-person-fill"></i> About
+
+                            About
+
                         </a>
+
                     </li>
 
+
                     <li class="nav-item">
+
+                        <a class="nav-link" href="#experience">
+
+                            Experience
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
                         <a class="nav-link" href="#skills">
-                            <i class="bi bi-gear-fill"></i> Skills
+
+                            Skills
+
                         </a>
+
                     </li>
 
+
                     <li class="nav-item">
+
+                        <a class="nav-link" href="#expertise">
+
+                            Expertise
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
                         <a class="nav-link" href="#projects">
-                            <i class="bi bi-folder-fill"></i> Projects
+
+                            Projects
+
                         </a>
+
                     </li>
 
+
                     <li class="nav-item">
-                        <a class="nav-link" href="#certificate">
-                            <i class="bi bi-award-fill"></i> Certificates
+
+                        <a class="nav-link" href="#quick-overview">
+
+                            Overview
+
                         </a>
+
                     </li>
-                    <li>
-                        <a class="nav-link" href="#FAQs">
-                            <i class="bi bi-question-circle-fill"></i> FAQs
-                        </a>
-                    </li>
+
+
                     <li class="nav-item">
+
                         <a class="nav-link" href="#contact">
-                            <i class="bi bi-envelope-fill"></i> Contact
+
+                            Contact
+
                         </a>
+
                     </li>
 
-                </div>
+                </ul>
+
             </div>
 
         </div>
+
     </nav>
-    <section id="hero" class="d-flex align-items-center justify-content-center" style="height: 100vh;">
-        <div class="text-center">
-            <h1 class="display-4">Hi,<span> I'm Vanasetti Charan</span></h1>
-            <h3 class="lead">Python Backend Developer | Building Scalable & Efficient Systems</h3>
-            <p class="mt-3">
-                I build backend systems using Python and SQL to solve real-world problems with clean, efficient, and
-                maintainable code.
+
+
+    <!-- =================================
+         HERO SECTION
+    ================================= -->
+
+    <section id="hero">
+
+        <div class="hero-orb" id="heroOrb">
+        </div>
+
+
+        <div class="container hero-content">
+
+
+            <div class="hero-status">
+
+                <span class="status-dot"></span>
+
+                Open to Technology Opportunities
+
+            </div>
+
+
+            <h1 class="hero-name">
+
+                Vanasetti
+                <span>Charan</span>
+
+            </h1>
+
+
+            <div class="hero-title">
+
+                Software & Web Technologies
+
+                <span class="hero-typing" id="typingText">
+                </span>
+
+                <span class="cursor">|</span>
+
+            </div>
+
+
+            <p class="hero-description">
+
+                Technology professional with a strong foundation in
+
+                <strong>
+                    Python, SQL, HTML, CSS, and JavaScript
+                </strong>
+
+                combined with professional experience in
+
+                <strong>
+                    Digital Accessibility
+                </strong>.
+
+                I enjoy building practical solutions, solving technical
+                problems, and continuously expanding my expertise.
+
             </p>
-            <div class="d-flex flex-wrap gap-3  justify-content-center mt-4">
-                <a href="certificates/Vanasetti_Charan-resume.pdf" target="_blank" class="btn btn-outline-light">
-                    <i class="bi bi-download"></i> &nbsp;Download Resume
+
+
+            <div class="hero-tags">
+
+                <span class="hero-tag">
+                    Python
+                </span>
+
+                <span class="hero-tag">
+                    SQL
+                </span>
+
+                <span class="hero-tag">
+                    HTML5
+                </span>
+
+                <span class="hero-tag">
+                    CSS3
+                </span>
+
+                <span class="hero-tag">
+                    JavaScript
+                </span>
+
+                <span class="hero-tag">
+                    Bootstrap
+                </span>
+
+                <span class="hero-tag">
+                    Digital Accessibility
+                </span>
+
+                <span class="hero-tag">
+                    PDF Accessibility
+                </span>
+
+            </div>
+
+
+            <div class="hero-buttons">
+
+
+                <a href="certificates/Vanasetti_Charan-resume.pdf" target="_blank" rel="noopener noreferrer"
+                    class="btn">
+
+                    <i class="bi bi-file-earmark-person"></i>
+
+                    View Resume
+
                 </a>
-                <a href="https://www.linkedin.com/in/vanasetti-charan/" target="_blank" class="btn btn-outline-light">
-                    <i class="bi bi-linkedin"></i>&nbsp; LinkedIn
+
+
+                <a href="#projects" class="btn btn-outline-custom">
+
+                    <i class="bi bi-code-slash"></i>
+
+                    Explore My Work
+
                 </a>
-                <a href="https://github.com/vanasetti-charan" target="_blank" class="btn btn-outline-light">
-                    <i class="bi bi-github"></i> &nbsp;GitHub
+
+
+                <a href="https://www.linkedin.com/in/vanasetti-charan/" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-outline-custom">
+
+                    <i class="bi bi-linkedin"></i>
+
+                    LinkedIn
+
                 </a>
 
             </div>
+
+
+            <div class="hero-stats">
+
+
+                <div class="hero-stat">
+
+                    <strong>
+                        Python
+                    </strong>
+
+                    <span>
+                        Programming
+                    </span>
+
+                </div>
+
+
+                <div class="hero-stat">
+
+                    <strong>
+                        Web
+                    </strong>
+
+                    <span>
+                        Technologies
+                    </span>
+
+                </div>
+
+
+                <div class="hero-stat">
+
+                    <strong>
+                        PDF
+                    </strong>
+
+                    <span>
+                        Accessibility
+                    </span>
+
+                </div>
+
+
+                <div class="hero-stat">
+
+                    <strong>
+                        WCAG
+                    </strong>
+
+                    <span>
+                        Standards
+                    </span>
+
+                </div>
+
+
+            </div>
+
         </div>
+
+
+        <div class="hero-scroll">
+
+            Explore
+
+            <i class="bi bi-chevron-down"></i>
+
+        </div>
+
     </section>
+
+
+    <!-- =================================
+     ABOUT
+================================= -->
+
     <section id="about">
+
         <div class="container">
-            <h2 class=" text-center">About Me</h2>
-            <p>
-                I am a Python Backend Developer with a strong foundation in Python, SQL, and problem-solving, supported
-                by a background in Mathematics and Computer Science. I apply analytical thinking to design and develop
-                efficient, scalable backend solutions.
-            </p>
-            <p>
-                I have built practical projects, including a Resume Screening System that automates resume analysis and
-                categorization based on job requirements, demonstrating my ability to solve real-world problems through
-                technology.
-            </p>
-            <p>
-                I am committed to writing clean, optimized, and maintainable code, and I continuously work on improving
-                my skills in backend development, database management, and system design.
-            </p>
-        </div>
 
-    </section>
-    <section id="skills">
-        <h2 class="text-center">Skills</h2>
-        <div class="card-s container">
-            <div class="crd">Python</div>
-            <div class="crd">SQL</div>
-            <div class="crd">OOP</div>
-            <div class="crd">File Handling</div>
-            <div class="crd">Data Structures</div>
-            <div class="crd">Problem Solving</div>
-            <div class="crd">Pandas</div>
-            <div class="crd">NumPy</div>
-            <div class="crd">HTML</div>
-            <div class="crd">CSS</div>
-            <div class="crd">Bootstrap</div>
-            <div class="crd">JavaScript</div>
-            <div class="crd">Git</div>
-            <div class="crd">GitHub</div>
-        </div>
-    </section>
-    <section id="projects">
-        <h2 class="text-center">Projects</h2>
-        <div class="card-s container">
-            <div class="card">
-                <h3>Resume Screening System</h3>
-                <p class="tech">
-                    Tech Stack: Python | PyPDF2 | python-docx | File Handling
-                </p>
-                <p>
-                    Reduced manual resume screening time by 70% by automating resume parsing and skill matching from PDF
-                    and DOCX files using Python.
-                </p>
-                <p>
-                    Implemented skill-matching logic to compare resumes with predefined job requirements and generate
-                    shortlisting scores, improving efficiency in the initial screening process.
-                </p>
-                <p>
-                    Optimized text processing and batch handling to efficiently manage multiple resumes.
-                </p>
-                <a href="https://github.com/vanasetti-charan/resume-screener-python" target="_blank" class="btn">View
-                    Code</a>
-            </div>
-            <div class="card">
-                <h3>Personal Portfolio Website</h3>
-
-                <p class="tech">
-                    Tech Stack: HTML | CSS | Bootstrap | JavaScript
-                </p>
-
-                <p>
-                    Designed and developed a responsive portfolio website to showcase projects, technical skills, and
-                    contact information.
-                </p>
-
-                <p>
-                    Used CSS Grid and Flexbox for layout management and implemented responsive design to ensure
-                    compatibility across devices.
-                </p>
-                <p>
-                    Focused on clean UI design and smooth navigation to enhance user experience.
-                </p><br><br>
-
-                <a href="https://github.com/vanasetti-charan/charan-portfolio" target="_blank" class="btn">View Code</a>
-            </div>
-            <div class="card">
-                <h3>Interactive CLI Quiz Application</h3>
-                <p class="tech">
-                    Tech Stack: Python | OOP | Exception Handling
-                </p>
-                <p>
-                    Developed an interactive command-line quiz application with time-based answer validation and a
-                    scoring system.
-                </p>
-                <p>
-                    Applied object-oriented programming principles and modular design to ensure clean code structure and
-                    maintainability.
-                </p>
-                <p>
-                    Implemented input validation and exception handling to enhance user experience and reliability.
-                </p><br>
-
-                <a href="https://github.com/vanasetti-charan/Python-Projects" target="_blank" class="btn">View Code</a>
-            </div>
-
-
-
-        </div>
-    </section>
-    <section id="certificate">
-        <div class="container">
-            <h2 class="text-center">Certifications</h2>
-            <div class="cert-s">
-                <div class="cert">
-                    <h4>SQL Fundamentals - WsCube Tech</h4>
-                    <a href="certificates/sql.png" target="_blank">
-                        <img src="certificates/sql.png" class="img-fluid">
-                    </a>
-                </div>
-                <div class="cert">
-                    <h4>Introduction to Python - Analytics Vidhya</h4>
-                    <a href="certificates/python.png" target="_blank">
-                        <img src="certificates/python.png" class="img-fluid">
-                    </a>
-                </div>
-                <div class="cert">
-                    <h4>Basics of NumPy - UniAthena</h4>
-                    <a href="certificates/numpy.png" target="_blank">
-                        <img src="certificates/numpy.png" class="img-fluid">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="container" id="FAQs">
-            <h2 class="text-center">Frequently Asked Questions
+            <h2 class="text-center">
+                About Me
             </h2>
-            <details>
-                <summary>Who are you and what do you specialize in?</summary>
-                <p>
-                    I am a Python Backend Developer specializing in building scalable and efficient backend systems
-                    using Python and SQL, with a strong focus on clean and maintainable code.
-                </p>
-            </details>
-            <details>
-                <summary>What technologies do you work with?</summary>
-                <p>
-                    I work with Python, SQL, Pandas, and NumPy. I also have basic knowledge of HTML, CSS, JavaScript,
-                    and use Git for version control.
-                </p>
-            </details>
-            <details>
-            <summary>What kind of projects have you built?</summary>
-            <p>
-                I have built projects like a Resume Screening System that automates resume parsing and skill matching, along with other projects focused on problem-solving and backend logic.
-            </p>
-        </details>
 
-        <details>
-            <summary>How do you approach problem-solving and development?</summary>
             <p>
-                I focus on understanding the problem clearly, breaking it into smaller parts, and writing clean and efficient code. I aim to build solutions that are simple, structured, and scalable.
+                I am a technology professional with a strong foundation in
+                software and web technologies, including Python, SQL, HTML,
+                CSS, JavaScript, and Bootstrap. I enjoy building practical
+                solutions, solving technical problems, and continuously
+                expanding my knowledge across different areas of technology.
             </p>
-        </details>
 
-        <details>
-            <summary>Are you open to job opportunities?</summary>
             <p>
-                Yes, I am actively looking for entry-level opportunities as a Python Backend Developer where I can learn, grow, and contribute to real-world projects.
+                I currently work as a
+                <strong>PDF Accessibility Specialist</strong>
+                at ZorvinTech Private Limited, where I work on PDF accessibility
+                and accessible document structures. I am also expanding my
+                expertise into <strong>web accessibility</strong>, with a focus
+                on accessible web experiences and WCAG principles.
             </p>
-        </details>
-         <details>
-            <summary>Why should we hire you?</summary>
+
             <p>
-             As a fresher, I bring strong fundamentals in Python and backend development along with hands-on project experience. I have built real-world projects like a Resume Screening System that demonstrate my ability to solve practical problems. I am a quick learner, adaptable, and focused on writing clean, efficient code while continuously improving my skills.
+                Alongside my professional experience, I have developed
+                practical projects using Python and web technologies, including
+                a Resume Screening System and my personal portfolio website.
+                I am interested in opportunities where I can apply my technical
+                skills, learn new technologies, and contribute to meaningful
+                software and web solutions.
             </p>
-        </details>
-        
-    </section>
-    <section id="contact">
-        <div class="container text-center">
-            <h2 class="text-center">Contact Me</h2>
-            <form class="d-flex flex-column align-items-center" action="https://formsubmit.co/vanasetticharan@gmail.com"
-                method="POST">
-                <input type="text" name="name" placeholder="Your Name" class="form-control mb-3 w-75 p-3" required>
-                <input type="email" name="email" placeholder="Your Email" class="form-control mb-3 w-75" required>
-                <textarea name="message" rows="5" placeholder="Your Message" class="form-control mb-3 w-75"
-                    required></textarea>
-                <button type="submit" class="btn">
-                    <i class="bi bi-send"></i> &nbsp;Send Message
-                </button>
-            </form>
+
         </div>
+
     </section>
+
+
+    <!-- =================================
+         EXPERIENCE
+    ================================= -->
+
+    <section id="experience">
+
+        <div class="container">
+
+
+            <h2 class="text-center">
+                Professional Experience
+            </h2>
+
+
+            <div class="experience-card">
+
+
+                <h3>
+                    PDF Accessibility Specialist
+                </h3>
+
+
+                <div class="company">
+                    ZorvinTech Private Limited
+                </div>
+
+
+                <div class="duration">
+                    2026 – Present
+                </div>
+
+
+                <ul>
+
+                    <li>
+                        Work on PDF accessibility and accessible
+                        document structures as part of digital
+                        accessibility projects.
+                    </li>
+
+
+                    <li>
+                        Apply semantic tagging concepts to improve
+                        the accessibility and usability of PDF
+                        documents.
+                    </li>
+
+
+                    <li>
+                        Develop practical knowledge of WCAG and
+                        PDF/UA accessibility requirements.
+                    </li>
+
+
+                    <li>
+                        Review document structures and identify
+                        accessibility considerations during PDF
+                        remediation work.
+                    </li>
+
+
+                    <li>
+                        Continuously develop knowledge across
+                        digital accessibility and related software
+                        and web technologies.
+                    </li>
+
+                </ul>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================
+         SKILLS
+    ================================= -->
+
+    <section id="skills">
+
+        <div class="container">
+
+
+            <h2 class="text-center">
+                Technical Skills
+            </h2>
+
+
+            <div class="skill-group">
+
+                <div class="skill-group-title">
+                    Programming & Data
+                </div>
+
+
+                <div class="skills-grid">
+
+
+                    <div class="skill-card">
+                        <i class="bi bi-filetype-py"></i>
+                        Python
+                    </div>
+
+
+                    <div class="skill-card">
+                        <i class="bi bi-database"></i>
+                        SQL
+                    </div>
+
+
+                    <div class="skill-card">
+                        <i class="bi bi-diagram-3"></i>
+                        OOP
+                    </div>
+
+
+                    <div class="skill-card">
+                        <i class="bi bi-file-earmark-text"></i>
+                        File Handling
+                    </div>
+
+
+                    <div class="skill-card">
+                        <i class="bi bi-bar-chart"></i>
+                        Pandas
+                    </div>
+
+
+                    <div class="skill-card">
+                        <i class="bi bi-calculator"></i>
+                        NumPy
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+            <div class="skill-group">
+
+                <div class="skill-group-title">
+                    Web Technologies
+                </div>
+
+
+                <div class="skills-grid">
+
+
+                    <div class="skill-card">
+                        <i class="bi bi-filetype-html"></i>
+                        HTML5
+                    </div>
+
+
+                    <div class="skill-card">
+                        <i class="bi bi-filetype-css"></i>
+                        CSS3
+                    </div>
+
+
+                    <div class="skill-card">
+                        <i class="bi bi-filetype-js"></i>
+                        JavaScript
+                    </div>
+
+
+                    <div class="skill-card">
+                        <i class="bi bi-bootstrap"></i>
+                        Bootstrap
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+            <div class="skill-group">
+
+                <div class="skill-group-title">
+                    Accessibility
+                </div>
+
+
+                <div class="skills-grid">
+
+
+                    <div class="skill-card">
+                        <i class="bi bi-universal-access"></i>
+                        Digital Accessibility
+                    </div>
+
+
+                    <div class="skill-card">
+                        <i class="bi bi-file-earmark-pdf"></i>
+                        PDF Accessibility
+                    </div>
+
+
+                    <div class="skill-card">
+                        <i class="bi bi-check2-circle"></i>
+                        WCAG
+                    </div>
+
+
+                    <div class="skill-card">
+                        <i class="bi bi-file-earmark-check"></i>
+                        PDF/UA
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================
+         AREAS OF EXPERTISE
+    ================================= -->
+
+    <section id="expertise">
+
+        <div class="container">
+
+
+            <h2 class="text-center">
+                Areas of Expertise
+            </h2>
+
+
+            <div class="row g-4">
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="expertise-card">
+
+                        <div class="expertise-icon">
+                            <i class="bi bi-code-square"></i>
+                        </div>
+
+                        <h3>
+                            Software Development
+                        </h3>
+
+                        <p>
+                            Building practical solutions using
+                            programming fundamentals, structured
+                            logic, and maintainable code.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="expertise-card">
+
+                        <div class="expertise-icon">
+                            <i class="bi bi-window"></i>
+                        </div>
+
+                        <h3>
+                            Web Technologies
+                        </h3>
+
+                        <p>
+                            Working with modern web fundamentals
+                            including HTML, CSS, JavaScript,
+                            responsive design, and Bootstrap.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="expertise-card">
+
+                        <div class="expertise-icon">
+                            <i class="bi bi-universal-access"></i>
+                        </div>
+
+                        <h3>
+                            Digital Accessibility
+                        </h3>
+
+                        <p>
+                            Practical professional exposure to
+                            accessibility concepts and inclusive
+                            digital experiences.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="expertise-card">
+
+                        <div class="expertise-icon">
+                            <i class="bi bi-file-earmark-pdf"></i>
+                        </div>
+
+                        <h3>
+                            PDF Accessibility
+                        </h3>
+
+                        <p>
+                            Experience working with accessible PDF
+                            structures, semantic tagging, and
+                            document accessibility.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="expertise-card">
+
+                        <div class="expertise-icon">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+
+                        <h3>
+                            Accessibility Standards
+                        </h3>
+
+                        <p>
+                            Developing practical knowledge of WCAG
+                            and PDF/UA requirements for accessible
+                            digital content.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="expertise-card">
+
+                        <div class="expertise-icon">
+                            <i class="bi bi-lightbulb"></i>
+                        </div>
+
+                        <h3>
+                            Technical Problem Solving
+                        </h3>
+
+                        <p>
+                            Breaking down technical challenges and
+                            developing structured, practical solutions
+                            through analytical thinking.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================
+         PROJECTS
+    ================================= -->
+
+    <section id="projects">
+
+        <div class="container">
+
+
+            <h2 class="text-center">
+                Featured Projects
+            </h2>
+
+
+            <div class="row g-4">
+
+
+                <div class="col-lg-4">
+
+                    <div class="project-card">
+
+
+                        <h3>
+                            Resume Screening System
+                        </h3>
+
+
+                        <p class="tech-stack">
+                            Python | Pandas | PyPDF2 | python-docx
+                        </p>
+
+
+                        <p>
+                            Developed a Python-based resume screening
+                            system that extracts resume content from
+                            PDF and DOCX files and compares candidate
+                            skills against predefined job requirements.
+                        </p>
+
+
+                        <p>
+                            Implemented skill matching, scoring,
+                            shortlisting logic, and batch processing
+                            to automate the initial screening workflow.
+                        </p>
+
+
+                        <a href="https://github.com/vanasetti-charan/resume-screener-python" target="_blank"
+                            rel="noopener noreferrer" class="btn">
+
+                            <i class="bi bi-github"></i>
+                            View Code
+
+                        </a>
+
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-4">
+
+                    <div class="project-card">
+
+
+                        <h3>
+                            Personal Portfolio Website
+                        </h3>
+
+
+                        <p class="tech-stack">
+                            HTML | CSS | Bootstrap | JavaScript
+                        </p>
+
+
+                        <p>
+                            Designed and developed a responsive
+                            portfolio website to showcase professional
+                            experience, technical skills, projects,
+                            and career interests.
+                        </p>
+
+
+                        <p>
+                            Implemented responsive layouts using
+                            CSS, Flexbox, and Bootstrap with a focus
+                            on clean design, usability, and responsive
+                            presentation.
+                        </p>
+
+
+                        <a href="https://github.com/vanasetti-charan/charan-portfolio" target="_blank"
+                            rel="noopener noreferrer" class="btn">
+
+                            <i class="bi bi-github"></i>
+                            View Code
+
+                        </a>
+
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-4">
+
+                    <div class="project-card">
+
+
+                        <h3>
+                            Interactive CLI Quiz
+                        </h3>
+
+
+                        <p class="tech-stack">
+                            Python | OOP | Exception Handling
+                        </p>
+
+
+                        <p>
+                            Developed an interactive command-line
+                            quiz application with timed answer
+                            validation, scoring, and user input
+                            handling.
+                        </p>
+
+
+                        <p>
+                            Applied object-oriented programming,
+                            modular design, validation, and exception
+                            handling to create a structured application.
+                        </p>
+
+
+                        <a href="https://github.com/vanasetti-charan/Python-Projects" target="_blank"
+                            rel="noopener noreferrer" class="btn">
+
+                            <i class="bi bi-github"></i>
+                            View Code
+
+                        </a>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================
+         QUICK OVERVIEW
+    ================================= -->
+
+    <section id="quick-overview">
+
+        <div class="container">
+
+
+            <h2 class="text-center">
+                Quick Overview
+            </h2>
+
+
+            <div class="overview-container">
+
+
+                <details class="overview-item">
+
+                    <summary>
+                        What is your current professional role?
+                    </summary>
+
+                    <p class="overview-answer">
+                        I currently work as a PDF Accessibility Specialist at ZorvinTech Private Limited, where I work
+                        on PDF accessibility and accessible document structures. I am also expanding my expertise into
+                        web accessibility, with a focus on accessible web experiences and WCAG principles.
+                    </p>
+
+                </details>
+
+
+                <details class="overview-item">
+
+                    <summary>
+                        What is your technical background?
+                    </summary>
+
+                    <p class="overview-answer">
+                        My technical foundation includes Python, SQL,
+                        HTML5, CSS3, JavaScript, Bootstrap, Git, and
+                        GitHub, along with programming concepts such as
+                        OOP, file handling, and problem solving.
+                    </p>
+
+                </details>
+
+
+                <details class="overview-item">
+
+                    <summary>
+                        What kind of projects have you built?
+                    </summary>
+
+                    <p class="overview-answer">
+                        I have developed projects including a Resume
+                        Screening System using Python, a responsive
+                        Personal Portfolio Website, and an Interactive
+                        CLI Quiz Application.
+                    </p>
+
+                </details>
+
+
+                <details class="overview-item">
+
+                    <summary>
+                        What areas are you interested in?
+                    </summary>
+
+                    <p class="overview-answer">
+                        I am interested in opportunities across software
+                        development, Python development, web technologies,
+                        and digital accessibility, where I can apply my
+                        existing skills while continuing to grow.
+                    </p>
+
+                </details>
+
+
+                <details class="overview-item">
+
+                    <summary>
+                        What are you currently working to improve?
+                    </summary>
+
+                    <p class="overview-answer">
+                        I continuously work on strengthening my programming,
+                        web development, accessibility knowledge, and
+                        practical problem-solving skills through projects
+                        and hands-on learning.
+                    </p>
+
+                </details>
+
+
+                <details class="overview-item">
+
+                    <summary>
+                        What kind of work environment are you looking for?
+                    </summary>
+
+                    <p class="overview-answer">
+                        I am interested in opportunities where I can work
+                        on real-world technology projects, contribute to
+                        a team, learn from experienced professionals, and
+                        continue developing my technical capabilities.
+                    </p>
+
+                </details>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================
+         CONTACT
+    ================================= -->
+
+    <section id="contact">
+
+        <div class="container">
+
+
+            <h2>
+                Let's Connect
+            </h2>
+
+
+            <p class="contact-text">
+
+                I'm open to connecting with recruiters, professionals,
+                and teams working across software development, web
+                technologies, digital accessibility, and related
+                technology roles.
+
+            </p>
+
+
+            <form class="contact-form" action="https://formsubmit.co/vanasetticharan@gmail.com" method="POST">
+
+
+                <input type="hidden" name="_subject" value="Portfolio Contact">
+
+
+                <input type="hidden" name="_captcha" value="false">
+
+
+                <input type="hidden" name="_template" value="table">
+
+
+                <div class="mb-3">
+
+                    <input type="text" name="name" placeholder="Your Name" aria-label="Your Name" class="form-control"
+                        required>
+
+                </div>
+
+
+                <div class="mb-3">
+
+                    <input type="email" name="email" placeholder="Your Email" aria-label="Your Email"
+                        class="form-control" required>
+
+                </div>
+
+
+                <div class="mb-4">
+
+                    <textarea name="message" rows="6" placeholder="Your Message" aria-label="Your Message"
+                        class="form-control" required></textarea>
+
+                </div>
+
+
+                <button type="submit" class="btn">
+
+                    <i class="bi bi-send"></i>
+
+                    Send Message
+
+                </button>
+
+
+            </form>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================
+         FOOTER
+    ================================= -->
+
     <footer>
-        <div class="container text-center">
+
+        <div class="container">
+
 
             <div class="social-icons mb-3">
-                <a href="https://www.linkedin.com/in/vanasetti-charan/" target="_blank" title="LinkedIn">
+
+
+                <a href="https://www.linkedin.com/in/vanasetti-charan/" target="_blank" rel="noopener noreferrer"
+                    title="LinkedIn" aria-label="LinkedIn">
+
                     <i class="bi bi-linkedin"></i>
+
                 </a>
 
-                <a href="https://github.com/vanasetti-charan" target="_blank" title="GitHub">
+
+                <a href="https://github.com/vanasetti-charan" target="_blank" rel="noopener noreferrer" title="GitHub"
+                    aria-label="GitHub">
+
                     <i class="bi bi-github"></i>
+
                 </a>
 
-                <a href="mailto:vanasetticharan@gmail.com" title="Email">
+
+                <a href="mailto:vanasetticharan@gmail.com" title="Email" aria-label="Email">
+
                     <i class="bi bi-envelope"></i>
+
                 </a>
 
-                <a href="https://www.hackerrank.com/profile/vanasetticharan" target="_blank" title="HackerRank">
+
+                <a href="https://www.hackerrank.com/profile/vanasetticharan" target="_blank" rel="noopener noreferrer"
+                    title="HackerRank" aria-label="HackerRank">
+
                     <i class="bi bi-code-slash"></i>
+
                 </a>
+
+
             </div>
 
-            <p class="mb-2">
-                Designed & Built by <span class="name">Vanasetti Charan</span>
-            </p>
 
             <p>
-                © 2026 <span class="name">Vanasetti Charan</span> | Python Backend Developer
+
+                Designed & Built by
+
+                <span class="name">
+                    Vanasetti Charan
+                </span>
+
             </p>
 
+
+            <p>
+
+                © 2026
+
+                <span class="name">
+                    Vanasetti Charan
+                </span>
+
+                | Software & Web Technologies
+
+            </p>
+
+
         </div>
+
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- =================================
+         BOOTSTRAP JAVASCRIPT
+    ================================= -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+
+    <!-- =================================
+         CUSTOM JAVASCRIPT
+    ================================= -->
+
+    <script>
+
+
+        /* =================================
+           TYPING ANIMATION
+        ================================= */
+
+        const typingText =
+            document.getElementById("typingText");
+
+
+        const roles = [
+
+            " | Digital Accessibility",
+
+            " | PDF Accessibility",
+
+            " | Python Development",
+
+            " | Web Technologies",
+
+            " | Software Development"
+
+        ];
+
+
+        let roleIndex = 0;
+
+        let charIndex = 0;
+
+        let deleting = false;
+
+
+        function typeRole() {
+
+
+            const currentRole =
+                roles[roleIndex];
+
+
+            if (!deleting) {
+
+
+                typingText.textContent =
+                    currentRole.substring(
+                        0,
+                        charIndex + 1
+                    );
+
+
+                charIndex++;
+
+
+                if (
+                    charIndex ===
+                    currentRole.length
+                ) {
+
+
+                    deleting = true;
+
+
+                    setTimeout(
+                        typeRole,
+                        1800
+                    );
+
+
+                    return;
+
+                }
+
+
+            } else {
+
+
+                typingText.textContent =
+                    currentRole.substring(
+                        0,
+                        charIndex - 1
+                    );
+
+
+                charIndex--;
+
+
+                if (charIndex === 0) {
+
+
+                    deleting = false;
+
+
+                    roleIndex++;
+
+
+                    if (
+                        roleIndex >=
+                        roles.length
+                    ) {
+
+                        roleIndex = 0;
+
+                    }
+
+                }
+
+            }
+
+
+            const speed =
+                deleting
+                    ? 45
+                    : 75;
+
+
+            setTimeout(
+                typeRole,
+                speed
+            );
+
+        }
+
+
+        typeRole();
+
+
+        /* =================================
+           HERO MOUSE PARALLAX
+        ================================= */
+
+        const hero =
+            document.getElementById("hero");
+
+
+        const orb =
+            document.getElementById("heroOrb");
+
+
+        hero.addEventListener(
+            "mousemove",
+            function (event) {
+
+
+                const x =
+                    (
+                        event.clientX /
+                        window.innerWidth
+                        - 0.5
+                    ) * 30;
+
+
+                const y =
+                    (
+                        event.clientY /
+                        window.innerHeight
+                        - 0.5
+                    ) * 30;
+
+
+                orb.style.transform =
+                    `translate(${x}px, ${y}px)`;
+
+            }
+        );
+
+
+        hero.addEventListener(
+            "mouseleave",
+            function () {
+
+                orb.style.transform =
+                    "translate(0, 0)";
+
+            }
+        );
+
+
+        /* =================================
+           ACTIVE NAVIGATION
+        ================================= */
+
+        const sections =
+            document.querySelectorAll(
+                "section"
+            );
+
+
+        const navLinks =
+            document.querySelectorAll(
+                ".nav-link"
+            );
+
+
+        window.addEventListener(
+            "scroll",
+            function () {
+
+
+                let current = "";
+
+
+                sections.forEach(
+                    function (section) {
+
+
+                        const sectionTop =
+                            section.offsetTop
+                            - 120;
+
+
+                        if (
+                            window.scrollY >=
+                            sectionTop
+                        ) {
+
+                            current =
+                                section.getAttribute(
+                                    "id"
+                                );
+
+                        }
+
+                    }
+                );
+
+
+                navLinks.forEach(
+                    function (link) {
+
+
+                        link.classList.remove(
+                            "active"
+                        );
+
+
+                        if (
+                            link.getAttribute(
+                                "href"
+                            ) ===
+                            "#" + current
+                        ) {
+
+                            link.classList.add(
+                                "active"
+                            );
+
+                        }
+
+                    }
+                );
+
+            }
+        );
+
+
+        /* =================================
+           CLOSE MOBILE NAVBAR
+        ================================= */
+
+        const navLinksMobile =
+            document.querySelectorAll(
+                ".navbar-nav .nav-link"
+            );
+
+
+        const navbarCollapse =
+            document.querySelector(
+                ".navbar-collapse"
+            );
+
+
+        navLinksMobile.forEach(
+            function (link) {
+
+
+                link.addEventListener(
+                    "click",
+                    function () {
+
+
+                        if (
+                            navbarCollapse.classList.contains(
+                                "show"
+                            )
+                        ) {
+
+
+                            const bsCollapse =
+                                bootstrap.Collapse
+                                    .getInstance(
+                                        navbarCollapse
+                                    );
+
+
+                            if (bsCollapse) {
+
+                                bsCollapse.hide();
+
+                            }
+
+                        }
+
+                    }
+                );
+
+            }
+        );
+
+
+    </script>
+
+
 </body>
 
 </html>
