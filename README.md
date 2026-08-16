@@ -136,6 +136,9 @@ charan-portfolio/
 │
 ├── index.html
 │
+├── certificates/
+│   ├── Vanasetti_Charan-resume.pdf
+│
 └── README.md
 ```
 
