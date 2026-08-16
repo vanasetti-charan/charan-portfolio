@@ -137,3 +137,46 @@ charan-portfolio/
 ├── index.html
 │
 └── README.md
+
+🎯 Purpose
+
+This portfolio represents my ongoing professional journey across software development, web technologies, and digital accessibility.
+
+I continuously strengthen my technical skills through hands-on projects, professional experience, and practical learning.
+
+My goal is to contribute to meaningful technology solutions while continuing to grow professionally and technically.
+
+📈 Current Professional Focus
+PDF Accessibility Specialist
+
+ZorvinTech Private Limited
+
+Currently working in PDF Accessibility while expanding my practical knowledge of Web Accessibility, WCAG, and accessible web experiences.
+
+Alongside accessibility, I continue developing my skills in:
+
+Python
+SQL
+HTML
+CSS
+JavaScript
+Bootstrap
+Software Development
+Technical Problem Solving
+📬 Connect With Me
+
+🔗 LinkedIn:
+https://www.linkedin.com/in/vanasetti-charan/
+
+💻 GitHub:
+https://github.com/vanasetti-charan
+
+📧 Email:
+vanasetticharan@gmail.com
+
+🌐 Portfolio:
+https://vanasetti-charan.github.io/charan-portfolio/
+
+⭐ Thank you for visiting my portfolio repository!
+
+Feel free to explore my projects and connect with me.
